@@ -1,0 +1,19 @@
+---
+title: "First_repo_markdown2"
+author: "Jordan"
+date: "4/15/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+My *first* verion controlled project for RStudio
+
+Let's create a test plot
+
+```{r, test-plot}
+plot(cars)
+```
+
