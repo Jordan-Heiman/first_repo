@@ -2,18 +2,25 @@
 title: "First_repo_markdown2"
 author: "Jordan"
 date: "4/15/2020"
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-My *first* verion controlled project for RStudio
+This report documents by first attempt of using Git and GitHub to version control an RStudio Project. I will be modifying thi report, staging and commiting changes then pushing to GitHub
 
-Let's create a test plot
+Let's create a test plot of distance (miles) and speed (mph).
 
 ```{r, test-plot}
-plot(cars)
+plot(cars, col = "red", xlab = "speed (mph)", ylab = "distance (miles)")
+```
+
+A summary of the data frame is given below
+
+```{r, cars-summary}
+library(knitr)
+kable(summary(cars))
 ```
 
